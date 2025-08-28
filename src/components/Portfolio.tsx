@@ -58,18 +58,18 @@ const Portfolio = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="fade-in flex items-center justify-center mb-6">
-            <Camera className="w-8 h-8 text-primary-foreground mr-3" />
-            <span className="text-lg font-semibold text-gray-300 uppercase tracking-wider">
+            <Camera className="w-8 h-8 text-primary mr-3" />
+            <span className="text-lg font-semibold text-muted-foreground uppercase tracking-wider ">
               Our Work
             </span>
           </div>
           
-          <h2 className="fade-in text-4xl md:text-6xl font-bold mb-6 text-primary-foreground">
+          <h2 className="fade-in text-4xl md:text-6xl font-bold mb-6 text-primary">
             Featured
-            <span className="block text-gray-300">Installations</span>
+            <span className="block text-primary">Installations</span>
           </h2>
           
-          <p className="fade-in text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="fade-in text-xl text-gray-600 max-w-2xl mx-auto">
             Discover how our lighting solutions have transformed spaces across 
             residential, commercial, and hospitality projects.
           </p>
@@ -98,15 +98,15 @@ const Portfolio = () => {
                 
                 {/* Project Info */}
                 <div>
-                  <span className="text-sm font-semibold text-gray-400 uppercase tracking-wider">
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">
                     {project.category}
                   </span>
                   
-                  <h3 className="text-xl font-bold mb-3 text-primary-foreground group-hover:text-gray-300 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 text-muted-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
                   
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed">
                     {project.description}
                   </p>
                 </div>

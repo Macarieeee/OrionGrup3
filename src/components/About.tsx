@@ -105,10 +105,10 @@ const About = () => {
         {/* Call to Action Section */}
         <div className="mt-24 text-center">
           <div className="fade-in max-w-4xl mx-auto card-elegant section-dark">
-            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary-foreground">
+            <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
               Ready to Transform Your Space?
             </h3>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed text-muted-foreground">
               Let our expert team help you create the perfect lighting solution 
               for your project. From concept to installation, we're with you every step of the way.
             </p>

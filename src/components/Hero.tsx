@@ -53,15 +53,15 @@ const Hero = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className="fade-in text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="fade-in text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary">
             Illuminate Your
-            <span className="block text-transparent bg-gradient-to-r from-white to-gray-300 bg-clip-text">
+            <span className="block text-muted-foreground bg-gradient-to-r from-white to-gray-300 bg-clip-text">
               Perfect Space
             </span>
           </h1>
           
           {/* Subtitle */}
-          <p className="fade-in text-xl md:text-2xl mb-12 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+          <p className="fade-in text-xl md:text-2xl mb-12 text-gray-800 max-w-2xl mx-auto leading-relaxed">
             Discover our curated collection of premium lighting solutions. 
             From contemporary chandeliers to minimalist pendants.
           </p>
