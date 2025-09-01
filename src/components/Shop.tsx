@@ -28,20 +28,34 @@ const Shop = () => {
     return () => observer.disconnect();
   }, []);
 
-  const categories = [
+  const products = [
     {
-      name: "Smart Ceiling Systems",
-      description: "AI-powered ceiling fixtures with adaptive brightness and color control",
-      icon: Cpu,
-      productCount: "25+ Products",
-      gradient: "from-primary to-secondary"
+      name: "Modern Pendant Collection",
+      description: "Elegant pendant lights perfect for dining areas and kitchens",
+      price: "$299",
+      image: "/placeholder.svg",
+      category: "Pendant Lights"
     },
     {
-      name: "Connected Floor Lamps", 
-      description: "WiFi-enabled standing lamps with voice control and mobile integration",
-      icon: Wifi,
-      productCount: "18+ Products",
-      gradient: "from-secondary to-accent"
+      name: "Crystal Chandelier Series", 
+      description: "Luxurious crystal chandeliers for grand spaces and formal dining",
+      price: "$1,299",
+      image: "/placeholder.svg", 
+      category: "Chandeliers"
+    },
+    {
+      name: "LED Track Lighting",
+      description: "Versatile track lighting systems for accent and task lighting",
+      price: "$199",
+      image: "/placeholder.svg",
+      category: "Track Lights"
+    },
+    {
+      name: "Wall Sconce Collection",
+      description: "Contemporary wall sconces for ambient and decorative lighting",
+      price: "$149",
+      image: "/placeholder.svg",
+      category: "Wall Lights"
     }
   ];
 
@@ -63,86 +77,63 @@ const Shop = () => {
             </div>
             
             <h2 className="fade-in text-4xl md:text-5xl font-bold text-foreground leading-tight">
-              Revolutionary
-              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Smart Lighting</span>
+              Premium
+              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Lighting Collection</span>
             </h2>
           </div>
           
           <div className="flex-1 max-w-lg">
             <p className="fade-in text-lg text-muted-foreground leading-relaxed">
-              Discover our cutting-edge collection of AI-powered lighting solutions 
-              that seamlessly integrate into your smart ecosystem.
+              Discover our curated collection of premium lighting solutions 
+              that combine exceptional design with superior functionality.
             </p>
           </div>
         </div>
 
-        {/* Masonry-Style Product Grid */}
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Featured Large Card */}
-          <div className="lg:col-span-2 lg:row-span-2">
-            <div className="fade-in h-full bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 rounded-3xl p-8 border border-primary/20 group hover:shadow-[var(--shadow-glow)] transition-all duration-500">
-              <div className="flex items-start justify-between mb-8">
-                <div>
-                  <Cpu className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-3xl font-bold text-foreground mb-3">AI Smart Ecosystem</h3>
-                  <p className="text-muted-foreground text-lg">Complete home automation with machine learning capabilities</p>
-                </div>
-                <div className="bg-primary/20 rounded-full p-3">
-                  <ShoppingBag className="w-6 h-6 text-primary" />
-                </div>
-              </div>
-              
-              <div className="space-y-6 mb-8">
-                <div className="flex items-center justify-between p-4 bg-card/50 rounded-2xl border border-primary/10">
-                  <span className="text-sm text-muted-foreground">Ceiling Systems</span>
-                  <span className="text-sm font-semibold text-primary">25+ Products</span>
-                </div>
-                <div className="flex items-center justify-between p-4 bg-card/50 rounded-2xl border border-secondary/10">
-                  <span className="text-sm text-muted-foreground">Floor Solutions</span>
-                  <span className="text-sm font-semibold text-secondary">18+ Products</span>
-                </div>
-                <div className="flex items-center justify-between p-4 bg-card/50 rounded-2xl border border-accent/10">
-                  <span className="text-sm text-muted-foreground">Wall Fixtures</span>
-                  <span className="text-sm font-semibold text-accent">12+ Products</span>
-                </div>
-              </div>
-              
-              <Button className="w-full bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 py-4">
-                Explore Full Ecosystem
-              </Button>
-            </div>
-          </div>
-
-          {/* Category Cards */}
-          {categories.map((category, index) => {
-            const IconComponent = category.icon;
-            return (
-              <div key={category.name} className="fade-in">
-                <div className="h-full bg-card rounded-3xl p-6 border border-border group hover:border-primary/30 hover:shadow-[var(--shadow-elegant)] transition-all duration-300">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${category.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+        {/* Product Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {products.map((product, index) => (
+            <div key={product.name} className="fade-in">
+              <div className="h-full bg-card rounded-3xl overflow-hidden border border-border group hover:border-primary/30 hover:shadow-[var(--shadow-elegant)] transition-all duration-300">
+                <div className="aspect-square bg-gradient-to-br from-primary/5 to-secondary/5 relative overflow-hidden">
+                  <img 
+                    src={product.image} 
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                      {product.category}
+                    </span>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {category.name}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <Button size="sm" className="bg-white/90 text-primary hover:bg-white">
+                      <ShoppingBag className="w-4 h-4" />
+                    </Button>
+                  </div>
+                </div>
+                
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    {product.name}
                   </h3>
                   
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                    {category.description}
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {product.description}
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
-                      {category.productCount}
+                    <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                      {product.price}
                     </span>
                     <Button size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                      View
+                      Add to Cart
                     </Button>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
         {/* Bottom CTA Section */}

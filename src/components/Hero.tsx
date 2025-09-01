@@ -59,20 +59,20 @@ const Hero = () => {
               <div className="fade-in">
                 <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                   <Lightbulb className="w-5 h-5 text-primary mr-2" />
-                  <span className="text-sm font-semibold text-primary">Smart Illumination Tech</span>
+                  <span className="text-sm font-semibold text-primary">Professional Lighting</span>
                 </div>
               </div>
               
               <h1 className="fade-in text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground">
-                Future of
+                Exceptional
                 <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent mt-2">
-                  Smart Lighting
+                  Lighting Solutions
                 </span>
               </h1>
               
               <p className="fade-in text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Revolutionize your space with AI-powered illumination systems that adapt, 
-                learn, and create the perfect ambiance for every moment.
+                Transform your space with our premium lighting solutions that combine 
+                elegant design with superior functionality for every environment.
               </p>
               
               <div className="fade-in flex flex-col sm:flex-row gap-4">
@@ -91,7 +91,7 @@ const Hero = () => {
               <div className="relative w-full max-w-lg mx-auto">
                 <img 
                   src={heroImage} 
-                  alt="Modern smart lighting installation" 
+                  alt="Modern lighting installation" 
                   className="w-full h-[500px] object-cover rounded-3xl shadow-[var(--shadow-dramatic)]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-3xl"></div>
@@ -100,14 +100,14 @@ const Hero = () => {
                 <div className="absolute top-8 right-8 bg-card/80 backdrop-blur-sm rounded-2xl p-4 border border-primary/20 animate-float">
                   <div className="flex items-center space-x-2">
                     <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-foreground">AI Active</span>
+                    <span className="text-sm font-medium text-foreground">Professional Grade</span>
                   </div>
                 </div>
                 
                 <div className="absolute bottom-8 left-8 bg-card/80 backdrop-blur-sm rounded-2xl p-4 border border-secondary/20 animate-float animation-delay-1000">
                   <div className="text-center">
-                    <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">98%</div>
-                    <div className="text-xs text-muted-foreground">Energy Efficient</div>
+                    <div className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">15+</div>
+                    <div className="text-xs text-muted-foreground">Years Experience</div>
                   </div>
                 </div>
               </div>
@@ -119,20 +119,20 @@ const Hero = () => {
       {/* Bottom Stats */}
       <div className="absolute bottom-0 left-0 right-0 py-8 bg-gradient-to-t from-background/80 to-transparent backdrop-blur-sm">
         <div className="container mx-auto px-6">
-          <div className="fade-in flex flex-wrap justify-center gap-12 text-center">
-            <div>
-              <div className="text-2xl font-bold text-primary">1000+</div>
-              <div className="text-sm text-muted-foreground">Smart Homes</div>
+            <div className="fade-in flex flex-wrap justify-center gap-12 text-center">
+              <div>
+                <div className="text-2xl font-bold text-primary">1000+</div>
+                <div className="text-sm text-muted-foreground">Projects</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-secondary">500+</div>
+                <div className="text-sm text-muted-foreground">Happy Clients</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-accent">15+</div>
+                <div className="text-sm text-muted-foreground">Years Experience</div>
+              </div>
             </div>
-            <div>
-              <div className="text-2xl font-bold text-secondary">50+</div>
-              <div className="text-sm text-muted-foreground">Cities</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-accent">99.9%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

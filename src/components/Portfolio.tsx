@@ -82,7 +82,7 @@ const Portfolio = () => {
           
           <div className="lg:col-span-2">
             <p className="fade-in text-lg text-muted-foreground leading-relaxed">
-              Real projects, real results. See how our smart lighting solutions 
+              Real projects, real results. See how our professional lighting solutions 
               have transformed spaces across different industries and environments.
             </p>
           </div>

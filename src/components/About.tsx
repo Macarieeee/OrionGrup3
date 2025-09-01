@@ -49,19 +49,19 @@ const About = () => {
           <div className="lg:col-span-5">
             <div className="fade-in inline-flex items-center px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-8">
               <Users className="w-5 h-5 text-accent mr-2" />
-              <span className="text-sm font-semibold text-accent">About LuminaTech</span>
+              <span className="text-sm font-semibold text-accent">About Lumina</span>
             </div>
             
             <h2 className="slide-in-left text-4xl md:text-5xl font-bold text-foreground leading-tight mb-8">
-              Innovating Light,
+              Crafting Light,
               <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                Shaping Future
+                Creating Ambiance
               </span>
             </h2>
             
             <div className="slide-in-left space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                For over 15 years, we've been at the forefront of intelligent lighting innovation, 
+                For over 15 years, we've been at the forefront of lighting design, 
                 creating solutions that don't just illuminate—they transform the very essence of space.
               </p>
             </div>
@@ -73,7 +73,7 @@ const About = () => {
                 <div className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-colors">
                   <Award className="w-8 h-8 text-primary mb-4" />
                   <h3 className="text-xl font-bold text-foreground mb-2">15 Years</h3>
-                  <p className="text-muted-foreground text-sm">Leading innovation in smart lighting technology</p>
+                  <p className="text-muted-foreground text-sm">Leading innovation in professional lighting design</p>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/10 to-accent/5 rounded-2xl p-6 border border-secondary/20">
                   <Star className="w-8 h-8 text-secondary mb-4" />
@@ -109,8 +109,8 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "Innovation First",
-                description: "Pushing boundaries with cutting-edge AI and IoT integration",
+                title: "Design Excellence",
+                description: "Pushing boundaries with innovative lighting design and quality craftsmanship",
                 icon: "🚀"
               },
               {
@@ -143,11 +143,11 @@ const About = () => {
         <div className="mb-24">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="fade-in">
-              <h3 className="text-3xl font-bold text-foreground mb-6">Meet Our Visionaries</h3>
+              <h3 className="text-3xl font-bold text-foreground mb-6">Meet Our Experts</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Our team combines decades of engineering excellence with fresh perspectives 
-                on what intelligent lighting can achieve. From PhD researchers to creative 
-                designers, we're united by our passion for innovation.
+                Our team combines decades of design excellence with fresh perspectives 
+                on what professional lighting can achieve. From experienced engineers to creative 
+                designers, we're united by our passion for illumination.
               </p>
               <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-glow)] px-8 py-4">
                 Meet the Team
@@ -159,18 +159,18 @@ const About = () => {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto mb-4"></div>
-                    <div className="text-sm font-semibold text-foreground">AI Research</div>
-                    <div className="text-xs text-muted-foreground">Machine Learning</div>
+                    <div className="text-sm font-semibold text-foreground">Design Team</div>
+                    <div className="text-xs text-muted-foreground">Creative Direction</div>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full mx-auto mb-4"></div>
-                    <div className="text-sm font-semibold text-foreground">Design Team</div>
-                    <div className="text-xs text-muted-foreground">User Experience</div>
+                    <div className="text-sm font-semibold text-foreground">Installation</div>
+                    <div className="text-xs text-muted-foreground">Field Services</div>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-full mx-auto mb-4"></div>
                     <div className="text-sm font-semibold text-foreground">Engineering</div>
-                    <div className="text-xs text-muted-foreground">Hardware & Software</div>
+                    <div className="text-xs text-muted-foreground">Technical Solutions</div>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-primary via-secondary to-accent rounded-full mx-auto mb-4"></div>
@@ -192,8 +192,8 @@ const About = () => {
                   Ready to Illuminate Your Vision?
                 </h3>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Let's collaborate to create a lighting ecosystem that's perfectly tailored to your space, 
-                  your needs, and your future.
+                  Let's collaborate to create a lighting solution that's perfectly tailored to your space, 
+                  your needs, and your vision.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-glow)] px-8 py-4">
