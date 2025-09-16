@@ -30,67 +30,67 @@ const Shop = () => {
 
   const products = [
     {
-      name: "Modern Pendant Collection",
-      description: "Elegant pendant lights perfect for dining areas and kitchens",
-      price: "$299",
+      name: "Colecția de Pendule Moderne",
+      description: "Lămpi suspendate elegante, perfecte pentru zone de luat masa și bucătării",
+      price: "299 RON",
       image: "/placeholder.svg",
-      category: "Pendant Lights"
+      category: "Pendule"
     },
     {
-      name: "Crystal Chandelier Series", 
-      description: "Luxurious crystal chandeliers for grand spaces and formal dining",
-      price: "$1,299",
+      name: "Seria de Candelabre din Cristal", 
+      description: "Candelabre luxoase din cristal pentru spații grandioase și săli de mese formale",
+      price: "1.299 RON",
       image: "/placeholder.svg", 
-      category: "Chandeliers"
+      category: "Candelabre"
     },
     {
-      name: "LED Track Lighting",
-      description: "Versatile track lighting systems for accent and task lighting",
-      price: "$199",
+      name: "Iluminat pe Șină cu LED",
+      description: "Sisteme de iluminat pe șină versatile, pentru accente și iluminat funcțional",
+      price: "199 RON",
       image: "/placeholder.svg",
-      category: "Track Lights"
+      category: "Lămpi pe șină"
     },
     {
-      name: "Wall Sconce Collection",
-      description: "Contemporary wall sconces for ambient and decorative lighting",
-      price: "$149",
+      name: "Colecția de Aplice de Perete",
+      description: "Aplice de perete contemporane, pentru iluminat ambiental și decorativ",
+      price: "149 RON",
       image: "/placeholder.svg",
-      category: "Wall Lights"
+      category: "Aplice"
     }
   ];
 
   return (
     <section ref={shopRef} className="py-32 section-light relative overflow-hidden">
-      {/* Background Elements */}
+      {/* Elemente de fundal */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-1/4 w-64 h-64 border border-primary rounded-full"></div>
         <div className="absolute bottom-20 right-1/4 w-48 h-48 border border-secondary rounded-full"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        {/* Modern Header Layout */}
+        {/* Header modern */}
         <div className="flex flex-col lg:flex-row items-start justify-between gap-12 mb-20">
           <div className="flex-1">
             <div className="fade-in inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <Zap className="w-5 h-5 text-primary mr-2" />
-              <span className="text-sm font-semibold text-primary">Product Collection</span>
+              <span className="text-sm font-semibold text-primary">Colecție de produse</span>
             </div>
             
             <h2 className="fade-in text-4xl md:text-5xl font-bold text-foreground leading-tight">
-              Premium
-              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Lighting Collection</span>
+              Colecție de
+              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-4">iluminat premium</span>
             </h2>
           </div>
           
           <div className="flex-1 max-w-lg">
             <p className="fade-in text-lg text-muted-foreground leading-relaxed">
-              Discover our curated collection of premium lighting solutions 
-              that combine exceptional design with superior functionality.
+              Descoperă colecția noastră selectată de soluții de iluminat premium, 
+              care îmbină designul excepțional cu funcționalitatea superioară.
             </p>
           </div>
         </div>
 
-        {/* Product Grid */}
+        {/* Grid de produse */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <div key={product.name} className="fade-in">
@@ -122,27 +122,20 @@ const Shop = () => {
                     {product.description}
                   </p>
                   
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                      {product.price}
-                    </span>
-                    <Button size="sm" className="opacity-0 group-hover:opacity-100 transition-opacity">
-                      Add to Cart
-                    </Button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA Section */}
+        {/* Secțiune CTA de jos */}
         <div className="mt-20 text-center">
           <div className="fade-in max-w-2xl mx-auto bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-3xl p-8 border border-primary/20">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Transform Your Space?</h3>
-            <p className="text-muted-foreground mb-6">Browse our complete collection of smart lighting solutions</p>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Ești gata să îți transformi spațiul?</h3>
+            <p className="text-muted-foreground mb-6">Răsfoiește colecția noastră completă de soluții inteligente de iluminat</p>
             <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-glow)] px-8 py-3">
-              View All Products
+              Vezi toate produsele
             </Button>
           </div>
         </div>

@@ -14,26 +14,26 @@ const Navigation = () => {
           <div className="flex items-center space-x-3">
             <Lightbulb className="w-8 h-8 text-primary drop-shadow-[0_0_10px_hsl(217_91%_60%/0.5)]" />
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              LuminaTech
+              Orion Grup
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
-              Home
+              Acasa
             </a>
             <a href="#shop" className="text-foreground hover:text-primary transition-colors font-medium">
-              Shop
+              Magazin
             </a>
             <a href="#portfolio" className="text-foreground hover:text-primary transition-colors font-medium">
-              Portfolio
+              Portfoliu
             </a>
             <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
-              About
+              Despre noi
             </a>
             <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300">
-              Contact Us
+              Contacteaza-ne
             </Button>
           </div>
 
@@ -51,19 +51,19 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
-                Home
+                Acasa
               </a>
               <a href="#shop" className="text-foreground hover:text-primary transition-colors font-medium">
-                Shop
+                Magazin
               </a>
               <a href="#portfolio" className="text-foreground hover:text-primary transition-colors font-medium">
-                Portfolio
+                Portfoliu
               </a>
               <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
-                About
+                Despre Noi
               </a>
               <Button className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 w-fit">
-                Contact Us
+                Contacteaza-ne
               </Button>
             </div>
           </div>
